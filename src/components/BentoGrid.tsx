@@ -142,7 +142,7 @@ export default function BentoGrid() {
                             Daily-AI-Scholar
                         </h3>
                         <p className="text-base leading-relaxed flex-1" style={{ color: 'var(--text-secondary)' }}>
-                            自动化的学习助手。每天通过邮件为您推送精选的 AI 知识与学术前沿，让学习变得更主动、更简单。
+                            自动化的学习助手，每天为您推送精选的所需知识与学术前沿，让学习变得更主动、更简单。目前形态为一个自动化的学术论文阅读助手，每天自动选取论文、生成 AI 总结并邮件推送。
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
