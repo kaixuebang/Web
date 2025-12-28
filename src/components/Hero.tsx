@@ -66,7 +66,7 @@ export default function Hero() {
                             </svg>
                         </Link>
                         <Link
-                            href="https://github.com/Jinqitrip/JQX-TourChain-node"
+                            href="https://github.com/kaixuebang"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-secondary"

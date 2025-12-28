@@ -116,6 +116,43 @@ export default function BentoGrid() {
                         </div>
                     </Link>
 
+                    {/* Daily-AI-Scholar Card - Clickable */}
+                    <Link
+                        href="https://github.com/zousirui2005/Daily-AI-Scholar"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bento-card reveal group cursor-pointer min-h-[320px] flex flex-col"
+                        style={{ transitionDelay: '0.35s' }}
+                    >
+                        <span className="inline-block px-3 py-1 text-xs font-medium rounded-full mb-4 w-fit"
+                            style={{
+                                backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                                color: 'var(--accent-green)'
+                            }}>
+                            学习助手
+                        </span>
+                        <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                            style={{ backgroundColor: 'rgba(16, 185, 129, 0.1)' }}>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-green)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+                            Daily-AI-Scholar
+                        </h3>
+                        <p className="text-base leading-relaxed flex-1" style={{ color: 'var(--text-secondary)' }}>
+                            自动化的学习助手。每天通过邮件为您推送精选的 AI 知识与学术前沿，让学习变得更主动、更简单。
+                        </p>
+                        <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
+                            style={{ color: 'var(--accent-green)' }}>
+                            <span>查看开源项目</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </Link>
+
                     {/* 教材帮 - Full Width, Under Construction */}
                     <div className="bento-card reveal lg:col-span-2 flex flex-col min-h-[280px]"
                         style={{ transitionDelay: '0.4s' }}>

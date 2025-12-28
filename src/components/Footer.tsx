@@ -11,6 +11,7 @@ export default function Footer() {
             { label: 'Grader', href: '#products' },
             { label: '教材帮', href: '#products' },
             { label: '评课社区', href: '#products' },
+            { label: 'Daily-AI-Scholar', href: '#products' },
         ],
         company: [
             { label: '关于我们', href: '#about' },
@@ -18,7 +19,7 @@ export default function Footer() {
             { label: '联系方式', href: '#contact' },
         ],
         resources: [
-            { label: 'GitHub', href: 'https://github.com/Jinqitrip/JQX-TourChain-node', external: true },
+            { label: 'GitHub', href: 'https://github.com/kaixuebang', external: true },
             { label: '开发者文档', href: '#' },
         ],
     };
