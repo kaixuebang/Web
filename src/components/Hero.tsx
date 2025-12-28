@@ -52,14 +52,14 @@ export default function Hero() {
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="reveal reveal-delay-2 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
+                    <p className="reveal reveal-delay-2 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
                         style={{ color: 'var(--text-secondary)' }}>
-                        凯学邦致力于构建教育大模型所需的底层知识库，帮助 K12 与大学生更高效地理解教材内容。连接教材与大模型的知识桥梁。
+                        凯学邦致力于构建全场景教育智能化基础设施。我们通过 AI 驱动的作业批改、透明的校园学术社区、自动化的知识助手及结构化的知识工程，连接学习、教学与评价的全链路，助力 K12 与大学生更高效地探索知识边界。
                     </p>
 
                     {/* CTA Buttons */}
                     <div className="reveal reveal-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link href="#products" className="btn-primary">
+                        <Link href="/#products" className="btn-primary">
                             <span>探索产品</span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

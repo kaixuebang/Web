@@ -105,7 +105,7 @@ export default function BentoGrid() {
                             评课社区
                         </h3>
                         <p className="text-base leading-relaxed flex-1" style={{ color: 'var(--text-secondary)' }}>
-                            中国版 RateMyProfessor。透明的课程评价社区，不仅是选课指南，更是学术反馈的闭环。
+                            中国校园社区版 RateMyProfessor。透明的课程评价社区，不仅是选课指南，更是学术反馈的闭环。
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
@@ -118,7 +118,7 @@ export default function BentoGrid() {
 
                     {/* Daily-AI-Scholar Card - Clickable */}
                     <Link
-                        href="https://github.com/zousirui2005/Daily-AI-Scholar"
+                        href="https://github.com/kaixuebang/Daily-AI-Scholar"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bento-card reveal group cursor-pointer min-h-[320px] flex flex-col"

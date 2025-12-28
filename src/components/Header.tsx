@@ -17,10 +17,10 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: '#products', label: '产品矩阵' },
-    { href: '#opensource', label: '开源贡献' },
-    { href: '#about', label: '关于我们' },
-    { href: '#contact', label: '联系方式' },
+    { href: '/#products', label: '产品矩阵' },
+    { href: '/#opensource', label: '开源贡献' },
+    { href: '/about', label: '关于我们' },
+    { href: '/#contact', label: '联系方式' },
   ];
 
   return (

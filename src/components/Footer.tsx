@@ -8,19 +8,18 @@ export default function Footer() {
 
     const footerLinks = {
         products: [
-            { label: 'Grader', href: '#products' },
-            { label: '教材帮', href: '#products' },
-            { label: '评课社区', href: '#products' },
-            { label: 'Daily-AI-Scholar', href: '#products' },
+            { label: 'Grader', href: '/#products' },
+            { label: '教材帮', href: '/#products' },
+            { label: '评课社区', href: '/#products' },
+            { label: 'Daily-AI-Scholar', href: '/#products' },
         ],
         company: [
-            { label: '关于我们', href: '#about' },
-            { label: '开源项目', href: '#opensource' },
-            { label: '联系方式', href: '#contact' },
+            { label: '关于我们', href: '/about' },
+            { label: '开源项目', href: '/#opensource' },
+            { label: '联系方式', href: '/#contact' },
         ],
         resources: [
             { label: 'GitHub', href: 'https://github.com/kaixuebang', external: true },
-            { label: '开发者文档', href: '#' },
         ],
     };
 
@@ -48,7 +47,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-                            以智能基础设施，重塑知识的传递。构建教育大模型所需的底层知识库。
+                            以智能基础设施，重塑知识的传递。构建全场景教育智能化基础设施，连接学习、教学与评价全链路。
                         </p>
                         {/* Contact Info */}
                         <div className="space-y-2 text-sm" style={{ color: 'var(--text-secondary)' }}>
