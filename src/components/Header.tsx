@@ -38,7 +38,7 @@ export default function Header() {
         >
           <Image
             src="/Logo.png"
-            alt="Kaixuebang Logo"
+            alt="凯学邦 Kaixuebang - 教育科技与知识工程"
             width={140}
             height={60}
             className="object-contain h-[60px] w-auto"

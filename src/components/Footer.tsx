@@ -40,7 +40,7 @@ export default function Footer() {
                         >
                             <Image
                                 src="/Logo.png"
-                                alt="Kaixuebang Logo"
+                                alt="凯学邦 Kaixuebang - 重塑知识的传递"
                                 width={140}
                                 height={60}
                                 className="object-contain h-[60px] w-auto"
@@ -53,6 +53,15 @@ export default function Footer() {
                         <div className="space-y-2 text-sm" style={{ color: 'var(--text-secondary)' }}>
                             <p>上海凯学邦信息咨询有限公司</p>
                             <p>Shanghai, China</p>
+                            <div className="pt-3">
+                                <a href="mailto:contact@kaixuebang.com" className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[var(--card-border)] hover:border-[var(--accent-green)]/30 hover:bg-[var(--accent-green)]/5 transition-all group">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[var(--text-tertiary)] group-hover:text-[var(--accent-green)]">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                    <span className="group-hover:text-[var(--text-primary)]">contact@kaixuebang.com</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
