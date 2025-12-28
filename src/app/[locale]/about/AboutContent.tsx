@@ -1,12 +1,14 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import KnowledgeGraph from '@/components/KnowledgeGraph';
+import { useTranslations } from 'next-intl';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import KnowledgeGraph from '@/components/KnowledgeGraph';
 
 export default function AboutContent() {
     const sectionRef = useRef<HTMLElement>(null);
+    const t = useTranslations('About');
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -38,18 +40,18 @@ export default function AboutContent() {
                             <div className="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium mb-8"
                                 style={{ color: 'var(--accent-purple)' }}>
                                 <span className="w-2 h-2 rounded-full bg-[var(--accent-purple)] animate-pulse" />
-                                关于我们 · About Us
+                                {t('badge')}
                             </div>
                             <h1 className="reveal reveal-delay-1 heading-xl mb-8" style={{ color: 'var(--text-primary)' }}>
-                                连接教材与大模型的<br />
-                                <span className="text-gradient-purple">知识桥梁</span>
+                                {t('title')}<br />
+                                <span className="text-gradient-purple">{t('title_highlight')}</span>
                             </h1>
                             <div className="reveal reveal-delay-2 max-w-2xl mx-auto">
                                 <p className="text-xl leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-                                    凯学邦成立于上海，是一家深耕教育科技与知识工程的创新型企业。
+                                    {t('desc1')}
                                 </p>
                                 <p className="text-lg leading-relaxed" style={{ color: 'var(--text-tertiary)' }}>
-                                    我们不制造大模型，我们为大模型建造通往专业领域的“轨道”。致力于通过结构化的知识工程，重塑数字时代的知识流动路径。
+                                    {t('desc2')}
                                 </p>
                             </div>
                         </div>
@@ -70,9 +72,9 @@ export default function AboutContent() {
                                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                                     </svg>
                                 </div>
-                                <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>我们的使命</h2>
+                                <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>{t('mission.title')}</h2>
                                 <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                                    以智能基础设施，重塑知识的传递。我们致力于解决大模型在教育领域“幻觉”严重、知识不专业、缺乏深度等痛点，通过结构化的知识工程，让 AI 真正成为良师益友。
+                                    {t('mission.description')}
                                 </p>
                             </div>
                             <div className="reveal reveal-delay-1 bento-card flex flex-col items-start text-left group">
@@ -83,9 +85,9 @@ export default function AboutContent() {
                                         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                                     </svg>
                                 </div>
-                                <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>我们的愿景</h2>
+                                <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>{t('vision.title')}</h2>
                                 <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                                    构建全球领先的教育智能化底座。在未来，每一本教材都能被精准数字化，每一个知识点都能被智能检索与生成，让教育公平与效率通过技术真正实现。
+                                    {t('vision.description')}
                                 </p>
                             </div>
                         </div>
@@ -97,7 +99,7 @@ export default function AboutContent() {
                     <div className="container-main">
                         <div className="max-w-4xl mx-auto">
                             <h2 className="reveal heading-lg mb-16 text-center" style={{ color: 'var(--text-primary)' }}>
-                                发展历程与技术基因
+                                {t('journey.title')}
                             </h2>
                             <div className="relative">
                                 {/* Vertical Line */}
@@ -107,10 +109,10 @@ export default function AboutContent() {
                                     {/* Item 1 */}
                                     <div className="reveal flex flex-col md:flex-row items-start md:items-center gap-8 relative">
                                         <div className="flex-1 text-left md:text-right">
-                                            <div className="inline-block px-4 py-1 rounded-full bg-[var(--accent-green)]/10 text-[var(--accent-green)] text-sm font-bold mb-2">起源</div>
-                                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>智慧校园导游起步</h3>
+                                            <div className="inline-block px-4 py-1 rounded-full bg-[var(--accent-green)]/10 text-[var(--accent-green)] text-sm font-bold mb-2">{t('journey.item1.tag')}</div>
+                                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>{t('journey.item1.title')}</h3>
                                             <p className="max-w-md ml-auto" style={{ color: 'var(--text-secondary)' }}>
-                                                凯学邦最初以“校园引路人”项目起步，通过数字化手段提升校园导游体验。这段经历让我们深刻意识到校园场景下信息流动的壁垒。
+                                                {t('journey.item1.description')}
                                             </p>
                                         </div>
                                         <div className="hidden md:flex w-12 h-12 rounded-full glass border-2 border-[var(--accent-green)] z-10 items-center justify-center bg-white">
@@ -122,10 +124,10 @@ export default function AboutContent() {
                                     {/* Item 2 */}
                                     <div className="reveal reveal-delay-1 flex flex-col md:flex-row-reverse items-start md:items-center gap-8 relative">
                                         <div className="flex-1 text-left">
-                                            <div className="inline-block px-4 py-1 rounded-full bg-[var(--accent-purple)]/10 text-[var(--accent-purple)] text-sm font-bold mb-2">转型</div>
-                                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>深耕教育知识工程</h3>
+                                            <div className="inline-block px-4 py-1 rounded-full bg-[var(--accent-purple)]/10 text-[var(--accent-purple)] text-sm font-bold mb-2">{t('journey.item2.tag')}</div>
+                                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>{t('journey.item2.title')}</h3>
                                             <p className="max-w-md" style={{ color: 'var(--text-secondary)' }}>
-                                                随着大模型时代的到来，我们意识到教育的核心在于教材与知识。我们开始全力投入“教材帮”知识库的建设，并推出了 Grader 智能批改、评课社区等产品。
+                                                {t('journey.item2.description')}
                                             </p>
                                         </div>
                                         <div className="hidden md:flex w-12 h-12 rounded-full glass border-2 border-[var(--accent-purple)] z-10 items-center justify-center bg-white">
@@ -137,10 +139,10 @@ export default function AboutContent() {
                                     {/* Item 3 */}
                                     <div className="reveal reveal-delay-2 flex flex-col md:flex-row items-start md:items-center gap-8 relative">
                                         <div className="flex-1 text-left md:text-right">
-                                            <div className="inline-block px-4 py-1 rounded-full bg-[var(--accent-green)]/10 text-[var(--accent-green)] text-sm font-bold mb-2">开源</div>
-                                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>回馈开发者社区</h3>
+                                            <div className="inline-block px-4 py-1 rounded-full bg-[var(--accent-green)]/10 text-[var(--accent-green)] text-sm font-bold mb-2">{t('journey.item3.tag')}</div>
+                                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>{t('journey.item3.title')}</h3>
                                             <p className="max-w-md ml-auto" style={{ color: 'var(--text-secondary)' }}>
-                                                我们深信开源的力量。通过 Daily-AI-Scholar 等项目，我们将内部使用的效率工具开源，希望能为全球的 AI 开发者与学习者提供帮助。
+                                                {t('journey.item3.description')}
                                             </p>
                                         </div>
                                         <div className="hidden md:flex w-12 h-12 rounded-full glass border-2 border-[var(--accent-green)] z-10 items-center justify-center bg-white">
@@ -159,10 +161,10 @@ export default function AboutContent() {
                     <div className="container-main text-center relative z-10">
                         <div className="max-w-3xl mx-auto glass p-12 md:p-20 rounded-[3rem] border-2 border-[var(--accent-green)]/10 shadow-2xl shadow-[var(--accent-green)]/5">
                             <h2 className="reveal heading-lg mb-8" style={{ color: 'var(--text-primary)' }}>
-                                加入我们，重塑未来
+                                {t('join_us.title')}
                             </h2>
                             <p className="reveal reveal-delay-1 text-xl leading-relaxed mb-12" style={{ color: 'var(--text-secondary)' }}>
-                                我们是一个充满激情的团队，汇聚了来自计算机、教育学、设计等领域的专家。如果你也对教育科技充满热忱，欢迎与我们取得联系。
+                                {t('join_us.description')}
                             </p>
                             <div className="reveal reveal-delay-2 flex flex-col items-center gap-8">
                                 <div className="flex flex-wrap justify-center gap-4 md:gap-8 w-full max-w-2xl">
@@ -174,7 +176,7 @@ export default function AboutContent() {
                                             </svg>
                                         </div>
                                         <div className="text-center">
-                                            <p className="text-sm font-medium mb-1" style={{ color: 'var(--text-tertiary)' }}>商务合作 / 建议反馈</p>
+                                            <p className="text-sm font-medium mb-1" style={{ color: 'var(--text-tertiary)' }}>{t('join_us.contact_badge')}</p>
                                             <a href="mailto:contact@kaixuebang.com" className="text-xl font-bold hover:text-[var(--accent-green)] transition-colors" style={{ color: 'var(--text-primary)' }}>
                                                 contact@kaixuebang.com
                                             </a>
@@ -188,7 +190,7 @@ export default function AboutContent() {
                                             </svg>
                                         </div>
                                         <div className="text-center">
-                                            <p className="text-sm font-medium mb-1" style={{ color: 'var(--text-tertiary)' }}>开源贡献</p>
+                                            <p className="text-sm font-medium mb-1" style={{ color: 'var(--text-tertiary)' }}>{t('join_us.opensource_badge')}</p>
                                             <a href="https://github.com/kaixuebang" target="_blank" rel="noopener noreferrer" className="text-xl font-bold hover:text-[var(--accent-purple)] transition-colors" style={{ color: 'var(--text-primary)' }}>
                                                 github.com/kaixuebang
                                             </a>
@@ -204,4 +206,3 @@ export default function AboutContent() {
         </>
     );
 }
-

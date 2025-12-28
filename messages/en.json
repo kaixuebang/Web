@@ -1,0 +1,122 @@
+{
+  "Metadata": {
+    "title": "Shanghai Kaixuebang Information Consulting Co., Ltd. | EdTech · Knowledge Engineering",
+    "description": "Kaixuebang is committed to building full-scenario intelligent infrastructure for education. We connect the entire chain of learning, teaching, and evaluation through AI-driven grading, transparent campus academic communities, automated knowledge assistants, and structured knowledge engineering.",
+    "keywords": "EdTech, K12 Knowledge Base, LLM Fine-tuning Data, Smart Campus, AI Education, Textbook-Help, Grader, Course-Prism, Daily-AI-Scholar"
+  },
+  "Header": {
+    "products": "Products",
+    "opensource": "Open Source",
+    "about": "About Us",
+    "contact": "Contact",
+    "explore": "Explore Products"
+  },
+  "Hero": {
+    "badge": "EdTech · Knowledge Engineering",
+    "title_part1": "Reshaping Knowledge Transfer with ",
+    "title_part2": "Intelligent Infrastructure",
+    "description": "Kaixuebang is dedicated to building full-scenario intelligent infrastructure for education. We connect the entire chain of learning, teaching, and evaluation through AI-driven grading, transparent campus academic communities, automated knowledge assistants, and structured knowledge engineering, helping K12 students and college students explore knowledge boundaries more efficiently.",
+    "explore_products": "Explore Products",
+    "github_opensource": "GitHub Open Source"
+  },
+  "BentoGrid": {
+    "title": "Core Product Matrix",
+    "subtitle": "Building intelligent infrastructure for education, empowering efficient knowledge transfer",
+    "grader": {
+      "tag": "Efficiency Tool",
+      "title": "Grader",
+      "description": "Intelligent grading assistant, releasing teaching potential. AI-driven automatic grading system supporting intelligent scoring and feedback for multiple subjects and question types.",
+      "link": "Visit Grader"
+    },
+    "course_prism": {
+      "tag": "Community Platform",
+      "title": "Course-Prism",
+      "description": "The RateMyProfessor for Chinese campuses. A transparent course evaluation community that is not just a course selection guide, but a closed loop of academic feedback.",
+      "link": "View Source"
+    },
+    "daily_ai_scholar": {
+      "tag": "Learning Assistant",
+      "title": "Daily-AI-Scholar",
+      "description": "An automated learning assistant that pushes selected knowledge and academic frontiers to you every day, making learning more proactive and simple. Currently an automated academic paper reading assistant that automatically selects papers, generates AI summaries, and sends email notifications.",
+      "link": "View Source"
+    },
+    "textbook_help": {
+      "tag": "Core Product",
+      "status": "🚧 Under Construction",
+      "title": "Textbook-Help",
+      "description": "A knowledge base for textbook-based large models. We don't create LLMs; we make LLMs understand textbooks better. We provide structured knowledge points and exercise data for AI to help students deeply understand core concepts.",
+      "feature1": "Structured knowledge points & exercises",
+      "feature2": "Aid deep understanding of concepts",
+      "feature3": "Covering all K12 subject textbooks",
+      "footer": "The project is under intensive construction, please stay tuned..."
+    }
+  },
+  "OpenSource": {
+    "title": "Technical DNA & Open Source",
+    "subtitle": "We believe in the power of open source and give back core technologies to the developer community",
+    "terminal": {
+      "comment1": "# Daily-AI-Scholar - Automated AI Learning Assistant",
+      "comment2": "# Daily email pushes of selected AI learning content and cutting-edge knowledge"
+    },
+    "view_source": "View Source",
+    "paused": "Paused",
+    "course_prism_title": "Course-Prism",
+    "course_prism_desc": "Course evaluation and communication community platform",
+    "daily_ai_scholar_title": "Daily-AI-Scholar",
+    "daily_ai_scholar_desc": "Automated AI learning assistant, daily email pushes of knowledge",
+    "tourchain_title": "TourChain",
+    "tourchain_desc": "Smart campus tour service platform (suspended due to company pivot)"
+  },
+  "Footer": {
+    "description": "Reshaping knowledge transfer with intelligent infrastructure. Building full-scenario intelligent infrastructure for education, connecting learning, teaching, and evaluation.",
+    "address_locality": "Shanghai",
+    "address_country": "China",
+    "products": "Products",
+    "company": "Company",
+    "resources": "Resources",
+    "about_us": "About Us",
+    "opensource_projects": "Open Source",
+    "contact_info": "Contact",
+    "all_rights_reserved": "All rights reserved."
+  },
+  "About": {
+    "badge": "About Us",
+    "title": "Building Full-Scenario",
+    "title_highlight": "Intelligent Ed-Infrastructure",
+    "desc1": "Founded in Shanghai, Kaixuebang is an innovative enterprise deeply rooted in EdTech and knowledge engineering.",
+    "desc2": "We are committed to connecting the entire chain of learning, teaching, and evaluation through AI-driven innovation and structured knowledge engineering, providing a solid intelligent foundation for education in the digital age.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "Reshaping knowledge transfer with intelligent infrastructure. We solve pain points such as information asymmetry and inefficient resource utilization in educational digitalization through AI and knowledge engineering, making high-quality education accessible to all."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "Building the world's leading intelligent foundation for education. In the future, teaching feedback, knowledge acquisition, and academic evaluation will be seamlessly connected through intelligent means, ensuring technology truly serves everyone's lifelong learning."
+    },
+    "journey": {
+      "title": "Development & Technical DNA",
+      "item1": {
+        "tag": "Origin",
+        "title": "Smart Campus Tour Start",
+        "description": "Kaixuebang started with the 'Campus Guide' project, improving the campus tour experience through digital means. This experience made us deeply aware of the barriers to information flow in campus scenarios."
+      },
+      "item2": {
+        "tag": "Diversification",
+        "title": "Building Ed-Intelligent Matrix",
+        "description": "With the development of AI technology, we began building a comprehensive EdTech product matrix. We launched Grader, Course-Prism, and the 'Textbook-Help' knowledge base, covering both learning and evaluation scenarios."
+      },
+      "item3": {
+        "tag": "Open Source",
+        "title": "Giving Back to the Community",
+        "description": "We believe in the power of open source. Through projects like Daily-AI-Scholar, we open-source our internal efficiency tools, hoping to help AI developers and learners worldwide."
+      }
+    },
+    "join_us": {
+      "title": "Join Us, Reshape the Future",
+      "description": "We are a passionate team of experts from computer science, education, design, and more. If you are passionate about EdTech, welcome to contact us.",
+      "contact_badge": "Business / Feedback",
+      "opensource_badge": "Open Source"
+    }
+  }
+}
+

@@ -1,0 +1,122 @@
+{
+  "Metadata": {
+    "title": "上海凯学邦信息咨询有限公司 | 教育科技 · 知识工程",
+    "description": "凯学邦致力于构建全场景教育智能化基础设施。我们通过 AI 驱动的作业批改、透明的校园学术社区、自动化的知识助手及结构化的知识工程，连接学习、教学与评价的全链路。",
+    "keywords": "教育科技, K12知识库, 大模型微调数据, 智慧校园, AI教育, 教材帮, 作业批改, 评课社区, Daily-AI-Scholar"
+  },
+  "Header": {
+    "products": "产品矩阵",
+    "opensource": "开源贡献",
+    "about": "关于我们",
+    "contact": "联系方式",
+    "explore": "探索产品"
+  },
+  "Hero": {
+    "badge": "教育科技 · 知识工程",
+    "title_part1": "以智能基础设施，",
+    "title_part2": "重塑知识的传递",
+    "description": "凯学邦致力于构建全场景教育智能化基础设施。我们通过 AI 驱动的作业批改、透明的校园学术社区、自动化的知识助手及结构化的知识工程，连接学习、教学与评价的全链路，助力 K12 与大学生更高效地探索知识边界。",
+    "explore_products": "探索产品",
+    "github_opensource": "GitHub 开源"
+  },
+  "BentoGrid": {
+    "title": "核心产品矩阵",
+    "subtitle": "构建教育智能化的基础设施，赋能知识的高效传递",
+    "grader": {
+      "tag": "效率工具",
+      "title": "Grader",
+      "description": "智能作业批改助手，释放教学效能。AI 驱动的自动批改系统，支持多学科、多题型的智能评分与反馈。",
+      "link": "访问 Grader"
+    },
+    "course_prism": {
+      "tag": "社区平台",
+      "title": "评课社区",
+      "description": "中国校园社区版 RateMyProfessor。透明的课程评价社区，不仅是选课指南，更是学术反馈的闭环。",
+      "link": "查看开源项目"
+    },
+    "daily_ai_scholar": {
+      "tag": "学习助手",
+      "title": "Daily-AI-Scholar",
+      "description": "自动化的学习助手，每天为您推送精选的所需知识与学术前沿，让学习变得更主动、更简单。目前形态为一个自动化的学术论文阅读助手，每天自动选取论文、生成 AI 总结并邮件推送。",
+      "link": "查看开源项目"
+    },
+    "textbook_help": {
+      "tag": "核心产品",
+      "status": "🚧 建设中",
+      "title": "教材帮",
+      "description": "教材大模型知识库。我们不制造大模型，我们让大模型更懂教材。为 AI 提供结构化的知识点与习题数据，辅助学生深度理解核心概念。",
+      "feature1": "结构化知识点与习题数据",
+      "feature2": "辅助深度理解核心概念",
+      "feature3": "覆盖 K12 全学科教材",
+      "footer": "项目正在紧锣密鼓地建设中，敬请期待..."
+    }
+  },
+  "OpenSource": {
+    "title": "技术基因与开源贡献",
+    "subtitle": "我们相信开源的力量，将核心技术回馈开发者社区",
+    "terminal": {
+      "comment1": "# Daily-AI-Scholar - 自动化 AI 学习助手",
+      "comment2": "# 每天定时通过邮件推送精选的 AI 学习内容与前沿知识"
+    },
+    "view_source": "查看源码",
+    "paused": "已暂停",
+    "course_prism_title": "Course-Prism (评课社区)",
+    "course_prism_desc": "课程评价与交流社区平台",
+    "daily_ai_scholar_title": "Daily-AI-Scholar",
+    "daily_ai_scholar_desc": "自动化 AI 学习助手，每天邮件推送学习知识",
+    "tourchain_title": "TourChain (校园引路人)",
+    "tourchain_desc": "智慧校园导游服务平台（因企业转型此项目已暂停运行）"
+  },
+  "Footer": {
+    "description": "以智能基础设施，重塑知识的传递。构建全场景教育智能化基础设施，连接学习、教学与评价全链路。",
+    "address_locality": "上海",
+    "address_country": "中国",
+    "products": "产品矩阵",
+    "company": "公司",
+    "resources": "资源",
+    "about_us": "关于我们",
+    "opensource_projects": "开源项目",
+    "contact_info": "联系方式",
+    "all_rights_reserved": "All rights reserved."
+  },
+  "About": {
+    "badge": "关于我们 · About Us",
+    "title": "构建全场景教育",
+    "title_highlight": "智能化基础设施",
+    "desc1": "凯学邦成立于上海，是一家深耕教育科技与知识工程的创新型企业。",
+    "desc2": "我们致力于通过 AI 驱动的技术创新与结构化的知识工程，连接学习、教学与评价的全链路，为数字时代的教育提供坚实的智能底座。",
+    "mission": {
+      "title": "我们的使命",
+      "description": "以智能基础设施，重塑知识的传递。我们通过 AI 与知识工程技术，解决教育数字化过程中的信息不对称、资源利用低效等痛点，让高质量教育触手及。"
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "description": "构建全球领先的教育智能化底座。在未来，教学反馈、知识获取与学术评价都将通过智能化手段实现无缝连接，让技术真正服务于每一个人的终身学习。"
+    },
+    "journey": {
+      "title": "发展历程与技术基因",
+      "item1": {
+        "tag": "起源",
+        "title": "智慧校园导游起步",
+        "description": "凯学邦最初以“校园引路人”项目起步，通过数字化手段提升校园导游体验。这段经历让我们深刻意识到校园场景下信息流动的壁垒。"
+      },
+      "item2": {
+        "tag": "多元化",
+        "title": "构建教育智能矩阵",
+        "description": "随着 AI 技术的发展，我们开始构建全方位的教育智能化产品矩阵。推出了 Grader 智能批改助手、评课社区以及基于结构化知识工程的“教材帮”知识库，全面覆盖学习与评价场景。"
+      },
+      "item3": {
+        "tag": "开源",
+        "title": "回馈开发者社区",
+        "description": "我们深信开源的力量。通过 Daily-AI-Scholar 等项目，我们将内部使用的效率工具开源，希望能为全球的 AI 开发者与学习者提供帮助。"
+      }
+    },
+    "join_us": {
+      "title": "加入我们，重塑未来",
+      "description": "我们是一个充满激情的团队，汇聚了来自计算机、教育学、设计等领域的专家。如果你也对教育科技充满热忱，欢迎与我们取得联系。",
+      "contact_badge": "商务合作 / 建议反馈",
+      "opensource_badge": "开源贡献"
+    }
+  }
+}
+

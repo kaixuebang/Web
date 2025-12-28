@@ -1,27 +1,32 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
+    const t = useTranslations('Footer');
+    const tBento = useTranslations('BentoGrid');
 
     const footerLinks = {
         products: [
-            { label: 'Grader', href: '/#products' },
-            { label: '教材帮', href: '/#products' },
-            { label: '评课社区', href: '/#products' },
-            { label: 'Daily-AI-Scholar', href: '/#products' },
+            { label: tBento('grader.title'), href: '/#products' },
+            { label: tBento('textbook_help.title'), href: '/#products' },
+            { label: tBento('course_prism.title'), href: '/#products' },
+            { label: tBento('daily_ai_scholar.title'), href: '/#products' },
         ],
         company: [
-            { label: '关于我们', href: '/about' },
-            { label: '开源项目', href: '/#opensource' },
-            { label: '联系方式', href: '/#contact' },
+            { label: t('about_us'), href: '/about' },
+            { label: t('opensource_projects'), href: '/#opensource' },
+            { label: t('contact_info'), href: '/#contact' },
         ],
         resources: [
             { label: 'GitHub', href: 'https://github.com/kaixuebang', external: true },
         ],
     };
+
+    const isZh = t('address_country' as any) === '中国';
 
     return (
         <footer
@@ -40,19 +45,19 @@ export default function Footer() {
                         >
                             <Image
                                 src="/Logo.png"
-                                alt="凯学邦 Kaixuebang - 重塑知识的传递"
+                                alt={isZh ? "凯学邦 Kaixuebang - 重塑知识的传递" : "Kaixuebang - Reshaping Knowledge Transfer"}
                                 width={140}
                                 height={60}
                                 className="object-contain h-[60px] w-auto"
                             />
                         </Link>
                         <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-                            以智能基础设施，重塑知识的传递。构建全场景教育智能化基础设施，连接学习、教学与评价全链路。
+                            {t('description')}
                         </p>
                         {/* Contact Info */}
                         <div className="space-y-2 text-sm" style={{ color: 'var(--text-secondary)' }}>
-                            <p>上海凯学邦信息咨询有限公司</p>
-                            <p>Shanghai, China</p>
+                            <p>{isZh ? '上海凯学邦信息咨询有限公司' : 'Shanghai Kaixuebang Information Consulting Co., Ltd.'}</p>
+                            <p>{t('address_locality')}, {t('address_country')}</p>
                             <div className="pt-3">
                                 <a href="mailto:contact@kaixuebang.com" className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[var(--card-border)] hover:border-[var(--accent-green)]/30 hover:bg-[var(--accent-green)]/5 transition-all group">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[var(--text-tertiary)] group-hover:text-[var(--accent-green)]">
@@ -68,13 +73,13 @@ export default function Footer() {
                     {/* Products Column */}
                     <div>
                         <h4 className="font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
-                            产品矩阵
+                            {t('products')}
                         </h4>
                         <ul className="space-y-3">
                             {footerLinks.products.map((link) => (
                                 <li key={link.label}>
                                     <Link
-                                        href={link.href}
+                                        href={link.href as any}
                                         className="text-sm transition-colors hover:opacity-70"
                                         style={{ color: 'var(--text-secondary)' }}
                                     >
@@ -88,13 +93,13 @@ export default function Footer() {
                     {/* Company Column */}
                     <div>
                         <h4 className="font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
-                            公司
+                            {t('company')}
                         </h4>
                         <ul className="space-y-3">
                             {footerLinks.company.map((link) => (
                                 <li key={link.label}>
                                     <Link
-                                        href={link.href}
+                                        href={link.href as any}
                                         className="text-sm transition-colors hover:opacity-70"
                                         style={{ color: 'var(--text-secondary)' }}
                                     >
@@ -108,13 +113,13 @@ export default function Footer() {
                     {/* Resources Column */}
                     <div>
                         <h4 className="font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
-                            资源
+                            {t('resources')}
                         </h4>
                         <ul className="space-y-3">
                             {footerLinks.resources.map((link) => (
                                 <li key={link.label}>
                                     <Link
-                                        href={link.href}
+                                        href={link.href as any}
                                         target={link.external ? '_blank' : undefined}
                                         rel={link.external ? 'noopener noreferrer' : undefined}
                                         className="text-sm transition-colors hover:opacity-70 inline-flex items-center gap-1"
@@ -142,19 +147,19 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     {/* Copyright */}
                     <p className="text-sm" style={{ color: 'var(--text-tertiary)' }}>
-                        © {currentYear} 上海凯学邦信息咨询有限公司 All rights reserved.
+                        © {currentYear} {isZh ? '上海凯学邦信息咨询有限公司' : 'Shanghai Kaixuebang Information Consulting Co., Ltd.'} {t('all_rights_reserved')}.
                     </p>
 
                     {/* SEO Keywords */}
                     <div className="flex flex-wrap items-center justify-center gap-3 text-xs"
                         style={{ color: 'var(--text-tertiary)' }}>
-                        <span>教育科技</span>
+                        <span>{isZh ? '教育科技' : 'EdTech'}</span>
                         <span>·</span>
-                        <span>K12知识库</span>
+                        <span>{isZh ? 'K12知识库' : 'K12 Knowledge Base'}</span>
                         <span>·</span>
-                        <span>大模型微调数据</span>
+                        <span>{isZh ? '大模型微调数据' : 'LLM Fine-tuning Data'}</span>
                         <span>·</span>
-                        <span>智慧校园</span>
+                        <span>{isZh ? '智慧校园' : 'Smart Campus'}</span>
                     </div>
                 </div>
 
