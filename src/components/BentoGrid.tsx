@@ -153,8 +153,8 @@ export default function BentoGrid() {
                         </div>
                     </Link>
 
-                    {/* 教材帮 - Full Width, Under Construction */}
-                    <div className="bento-card reveal lg:col-span-2 flex flex-col min-h-[280px]"
+                    {/* 教材帮 - Under Construction */}
+                    <div className="bento-card reveal flex flex-col min-h-[320px]"
                         style={{ transitionDelay: '0.4s' }}>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="inline-block px-3 py-1 text-xs font-medium rounded-full"
