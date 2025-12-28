@@ -23,10 +23,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     authors: [{ name: locale === 'zh' ? "上海凯学邦信息咨询有限公司" : "Shanghai Kaixuebang Information Consulting Co., Ltd." }],
     metadataBase: new URL("https://kaixuebang.com"),
     alternates: {
-      canonical: "/",
+      canonical: `/${locale}`,
       languages: {
         'en': '/en',
         'zh': '/zh',
+        'x-default': '/',
       },
     },
     openGraph: {

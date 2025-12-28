@@ -9,11 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   locales.forEach((locale) => {
     routes.forEach((route) => {
-      // For the default locale (zh), we might want to include both prefixed and non-prefixed
-      // But since we use localePrefix: 'as-needed', zh is at root.
-      const url = locale === 'zh' 
-        ? `${baseUrl}${route}`
-        : `${baseUrl}/${locale}${route}`;
+      // 因为使用了 localePrefix: 'always'，所有语言版本（包括 zh）都应该带上前缀
+      const url = `${baseUrl}/${locale}${route}`;
       
       sitemapEntries.push({
         url: url,

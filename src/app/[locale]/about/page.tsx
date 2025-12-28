@@ -12,16 +12,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t.desc1 + " " + t.desc2,
     keywords: meta.keywords.split(', '),
     alternates: {
-      canonical: "/about",
+      canonical: `/${locale}/about`,
       languages: {
         'en': '/en/about',
         'zh': '/zh/about',
+        'x-default': '/about',
       },
     },
     openGraph: {
       title: `${t.badge} | ${meta.title}`,
       description: t.desc1,
-      url: "https://kaixuebang.com/about",
+      url: `https://kaixuebang.com/${locale}/about`,
     },
   };
 }
