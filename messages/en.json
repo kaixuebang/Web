@@ -22,6 +22,7 @@
   "BentoGrid": {
     "title": "Core Product Matrix",
     "subtitle": "Building intelligent infrastructure for education, empowering efficient knowledge transfer",
+    "view_details": "View Details",
     "grader": {
       "tag": "Efficiency Tool",
       "title": "Grader",
@@ -124,22 +125,42 @@
     "back_to_home": "Back to Home",
     "grader": {
       "title": "Grader - AI Grading Assistant",
-      "description": "Releasing teaching potential with AI-driven grading solutions."
+      "description": "Releasing teaching potential with AI-driven grading solutions.",
+      "positioning": "Product Positioning",
+      "positioning_desc": "A core component of the full-scenario educational intelligent infrastructure, focusing on improving the efficiency of assignment grading and teaching feedback.",
+      "features": "Technical Features",
+      "features_desc": "AI-driven automated evaluation system, supporting multi-disciplinary knowledge alignment and personalized feedback generation."
     },
     "course_prism": {
       "title": "Course-Prism",
-      "description": "A transparent course evaluation community connecting feedback loops."
+      "description": "A transparent course evaluation community connecting feedback loops.",
+      "transparency": "Transparent Evaluation",
+      "transparency_desc": "Breaking course information silos, assisting students in making wiser academic decisions through real course selection and learning feedback.",
+      "community": "Academic Community",
+      "community_desc": "Not just evaluation, but also communication. Building an academic community based on courses to promote continuous improvement in teaching quality."
     },
     "daily_ai_scholar": {
       "title": "Daily-AI-Scholar",
-      "description": "Daily email pushes of selected AI knowledge to simplify learning."
+      "description": "Daily email pushes of selected AI knowledge to simplify learning.",
+      "workflow": "Automated Workflow",
+      "workflow_desc": "Automatically crawl the latest AI and academic papers from platforms like arXiv, and use LLMs to generate precise summaries.",
+      "reach": "Knowledge Reach",
+      "reach_desc": "Real-time push via email, Webhook, and other forms, making academic frontiers accessible."
     },
     "textbook_help": {
       "title": "Mentis",
       "description": "K12 Knowledge Graph based on elite pedagogy, providing deterministic truth for LLMs.",
       "vision": "Injecting 'Master Souls' into LLMs",
       "problem": "General LLM Flaws: Hallucination, Lack of Reasoning, Data Contamination.",
-      "solution": "Solution: OCR-to-Graph conversion, empowering training (SFT) and inference (RAG)."
+      "solution": "Solution: OCR-to-Graph conversion, empowering training (SFT) and inference (RAG).",
+      "problem_title": "The Problem",
+      "problem_p1": "Hallucination: Unable to distinguish between textbook versions",
+      "problem_p2": "Lack of Reasoning: No teacher-like chain of thought",
+      "problem_p3": "Data Contamination: Mixed quality of training data",
+      "solution_title": "The Solution",
+      "solution_p1": "OCR to Graph: Atomic decomposition of textbooks into logic graphs",
+      "solution_p2": "SFT: Providing high-quality datasets for training logic",
+      "solution_p3": "RAG: External knowledge base ensuring 100% accuracy"
     }
   }
 }

@@ -71,7 +71,7 @@ export default function BentoGrid() {
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
-                            <span>查看详情</span>
+                            <span>{t('view_details')}</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
@@ -107,7 +107,7 @@ export default function BentoGrid() {
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
-                            <span>查看详情</span>
+                            <span>{t('view_details')}</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
@@ -142,7 +142,7 @@ export default function BentoGrid() {
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
-                            <span>查看详情</span>
+                            <span>{t('view_details')}</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>

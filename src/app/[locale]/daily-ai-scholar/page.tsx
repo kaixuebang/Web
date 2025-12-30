@@ -31,7 +31,7 @@ export default async function DailyAIScholarPage({ params }: { params: Promise<{
       <main className="pt-32 pb-24">
         <div className="container-main">
           <div className="max-w-4xl mx-auto">
-            <Link href="/" className="inline-flex items-center gap-2 text-sm mb-12 hover:opacity-70 transition-opacity" style={{ color: 'var(--text-tertiary)' }}>
+            <Link href="/" locale={locale as any} className="inline-flex items-center gap-2 text-sm mb-12 hover:opacity-70 transition-opacity" style={{ color: 'var(--text-tertiary)' }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
               {common.back_to_home}
             </Link>
@@ -54,12 +54,12 @@ export default async function DailyAIScholarPage({ params }: { params: Promise<{
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 border-t" style={{ borderColor: 'var(--card-border)' }}>
                <div>
-                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>自动化流程</h3>
-                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>自动从 arXiv 等平台抓取最新的 AI 与学术论文，并利用大模型生成精准摘要。</p>
+                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>{t.workflow}</h3>
+                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{t.workflow_desc}</p>
                </div>
                <div>
-                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>知识触达</h3>
-                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>通过邮件、Webhook 等多种形式实时推送，让学术前沿触手可及。</p>
+                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>{t.reach}</h3>
+                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{t.reach_desc}</p>
                </div>
             </div>
           </div>

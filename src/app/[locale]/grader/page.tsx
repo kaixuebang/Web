@@ -51,7 +51,7 @@ export default async function GraderPage({ params }: { params: Promise<{ locale:
       <main className="pt-32 pb-24">
         <div className="container-main">
           <div className="max-w-4xl mx-auto">
-            <Link href="/" className="inline-flex items-center gap-2 text-sm mb-12 hover:opacity-70 transition-opacity" style={{ color: 'var(--text-tertiary)' }}>
+            <Link href="/" locale={locale as any} className="inline-flex items-center gap-2 text-sm mb-12 hover:opacity-70 transition-opacity" style={{ color: 'var(--text-tertiary)' }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
               {common.back_to_home}
             </Link>
@@ -74,12 +74,12 @@ export default async function GraderPage({ params }: { params: Promise<{ locale:
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 border-t" style={{ borderColor: 'var(--card-border)' }}>
                <div>
-                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>产品定位</h3>
-                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>构建全场景教育智能化基础设施的核心组件，专注于提升作业批改与教学反馈效率。</p>
+                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>{t.positioning}</h3>
+                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{t.positioning_desc}</p>
                </div>
                <div>
-                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>技术特色</h3>
-                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>AI 驱动的自动化评估系统，支持多学科知识点对齐与个性化反馈生成。</p>
+                  <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>{t.features}</h3>
+                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{t.features_desc}</p>
                </div>
             </div>
           </div>

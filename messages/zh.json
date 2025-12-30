@@ -22,6 +22,7 @@
   "BentoGrid": {
     "title": "核心产品矩阵",
     "subtitle": "构建教育智能化的基础设施，赋能知识的高效传递",
+    "view_details": "查看详情",
     "grader": {
       "tag": "效率工具",
       "title": "Grader",
@@ -124,22 +125,42 @@
     "back_to_home": "返回首页",
     "grader": {
       "title": "Grader 智能批改助手",
-      "description": "释放教学效能，AI 驱动的全场景作业批改解决方案。"
+      "description": "释放教学效能，AI 驱动的全场景作业批改解决方案。",
+      "positioning": "产品定位",
+      "positioning_desc": "构建全场景教育智能化基础设施的核心组件，专注于提升作业批改与教学反馈效率。",
+      "features": "技术特色",
+      "features_desc": "AI 驱动的自动化评估系统，支持多学科知识点对齐与个性化反馈生成。"
     },
     "course_prism": {
       "title": "评课社区 Course-Prism",
-      "description": "透明的课程评价社区，连接教与学的反馈闭环。"
+      "description": "透明的课程评价社区，连接教与学的反馈闭环。",
+      "transparency": "透明评价",
+      "transparency_desc": "打破课程信息茧房，通过真实的选课与学习反馈，辅助学生做出更明智的学术决策。",
+      "community": "学术社区",
+      "community_desc": "不仅是评价，更是交流。构建基于课程的学术共同体，促进教学质量的持续改进。"
     },
     "daily_ai_scholar": {
       "title": "Daily-AI-Scholar 自动化学习助手",
-      "description": "每天为您推送精选的 AI 前沿知识，让学习更简单。"
+      "description": "每天为您推送精选的 AI 前沿知识，让学习更简单。",
+      "workflow": "自动化流程",
+      "workflow_desc": "自动从 arXiv 等平台抓取最新的 AI 与学术论文，并利用大模型生成精准摘要。",
+      "reach": "知识触达",
+      "reach_desc": "通过邮件、Webhook 等多种形式实时推送，让学术前沿触手可及。"
     },
     "textbook_help": {
       "title": "教材帮 (Mentis)",
       "description": "基于名校教研体系的 K12 知识图谱，为大模型提供确定性的教育真理数据库。",
       "vision": "为大模型注入“名师灵魂”",
       "problem": "通用大模型的痛点：幻觉严重、逻辑匮乏、数据污染。",
-      "solution": "解决方案：从 OCR 到知识图谱的深度转换，提供 SFT 与 RAG 双重赋能模式。"
+      "solution": "解决方案：从 OCR 到知识图谱的深度转换，提供 SFT 与 RAG 双重赋能模式。",
+      "problem_title": "痛点 (The Problem)",
+      "problem_p1": "幻觉严重 (Hallucination)：无法区分不同教材版本的细微差异",
+      "problem_p2": "逻辑匮乏 (Lack of Reasoning)：只能给答案，没有名师解题思维链",
+      "problem_p3": "数据污染 (Data Contamination)：训练数据质量参差不齐",
+      "solution_title": "解决方案 (The Solution)",
+      "solution_p1": "OCR to Graph：原子化拆解教材，建立深度知识逻辑拓扑",
+      "solution_p2": "SFT (训练端)：提供高质量监督微调数据集，训练模型解题逻辑",
+      "solution_p3": "RAG (推理端)：外挂知识库，确保 100% 准确输出"
     }
   }
 }

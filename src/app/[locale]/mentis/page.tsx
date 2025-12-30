@@ -32,7 +32,7 @@ export default async function MentisPage({ params }: { params: Promise<{ locale:
       <main className="pt-32 pb-24">
         <div className="container-main">
           <div className="max-w-4xl mx-auto">
-            <Link href="/" className="inline-flex items-center gap-2 text-sm mb-12 hover:opacity-70 transition-opacity" style={{ color: 'var(--text-tertiary)' }}>
+            <Link href="/" locale={locale as any} className="inline-flex items-center gap-2 text-sm mb-12 hover:opacity-70 transition-opacity" style={{ color: 'var(--text-tertiary)' }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
               {common.back_to_home}
             </Link>
@@ -61,7 +61,7 @@ export default async function MentisPage({ params }: { params: Promise<{ locale:
               <div className="p-8 rounded-3xl glass border border-[var(--card-border)]">
                 <h3 className="text-xl font-bold mb-6 flex items-center gap-2" style={{ color: 'var(--text-primary)' }}>
                   <span className="w-8 h-8 rounded-lg bg-red-500/10 text-red-500 flex items-center justify-center text-sm">!</span>
-                  {isZh ? '痛点 (The Problem)' : 'The Problem'}
+                  {t.problem_title}
                 </h3>
                 <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
                   {t.problem}
@@ -69,15 +69,15 @@ export default async function MentisPage({ params }: { params: Promise<{ locale:
                 <ul className="space-y-4 text-sm" style={{ color: 'var(--text-tertiary)' }}>
                   <li className="flex gap-3">
                     <span className="text-red-500">•</span>
-                    {isZh ? '幻觉严重 (Hallucination)：无法区分不同教材版本的细微差异' : 'Hallucination: Unable to distinguish between textbook versions'}
+                    {t.problem_p1}
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-500">•</span>
-                    {isZh ? '逻辑匮乏 (Lack of Reasoning)：只能给答案，没有名师解题思维链' : 'Lack of Reasoning: No teacher-like chain of thought'}
+                    {t.problem_p2}
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-500">•</span>
-                    {isZh ? '数据污染 (Data Contamination)：训练数据质量参差不齐' : 'Data Contamination: Mixed quality of training data'}
+                    {t.problem_p3}
                   </li>
                 </ul>
               </div>
@@ -85,7 +85,7 @@ export default async function MentisPage({ params }: { params: Promise<{ locale:
               <div className="p-8 rounded-3xl glass border border-[var(--accent-green)]/20" style={{ backgroundColor: 'rgba(16, 185, 129, 0.02)' }}>
                 <h3 className="text-xl font-bold mb-6 flex items-center gap-2" style={{ color: 'var(--text-primary)' }}>
                   <span className="w-8 h-8 rounded-lg bg-[var(--accent-green)]/10 text-[var(--accent-green)] flex items-center justify-center text-sm">✓</span>
-                  {isZh ? '解决方案 (The Solution)' : 'The Solution'}
+                  {t.solution_title}
                 </h3>
                 <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
                   {t.solution}
@@ -93,15 +93,15 @@ export default async function MentisPage({ params }: { params: Promise<{ locale:
                 <ul className="space-y-4 text-sm" style={{ color: 'var(--text-tertiary)' }}>
                   <li className="flex gap-3">
                     <span className="text-[var(--accent-green)]">•</span>
-                    {isZh ? 'OCR to Graph：原子化拆解教材，建立深度知识逻辑拓扑' : 'OCR to Graph: Atomic decomposition of textbooks into logic graphs'}
+                    {t.solution_p1}
                   </li>
                   <li className="flex gap-3">
                     <span className="text-[var(--accent-green)]">•</span>
-                    {isZh ? 'SFT (训练端)：提供高质量监督微调数据集，训练模型解题逻辑' : 'SFT: Providing high-quality datasets for training logic'}
+                    {t.solution_p2}
                   </li>
                   <li className="flex gap-3">
                     <span className="text-[var(--accent-green)]">•</span>
-                    {isZh ? 'RAG (推理端)：外挂知识库，确保 100% 准确输出' : 'RAG: External knowledge base ensuring 100% accuracy'}
+                    {t.solution_p3}
                   </li>
                 </ul>
               </div>
