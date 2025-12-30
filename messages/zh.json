@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "上海凯学邦信息咨询有限公司 | 教育科技 · 知识工程",
-    "description": "凯学邦致力于构建全场景教育智能化基础设施。我们通过 AI 驱动的作业批改、透明的校园学术社区、自动化的知识助手及结构化的知识工程，连接学习、教学与评价的全链路。",
-    "keywords": "教育科技, K12知识库, 大模型微调数据, 智慧校园, AI教育, 教材帮, 作业批改, 评课社区, Daily-AI-Scholar"
+    "title": "凯学邦 (Kaixuebang) - 教育科技与知识工程 | 教材帮 & Grader",
+    "description": "凯学邦致力于构建全场景教育智能化基础设施。旗下产品包括：教材帮 (Mentis) 垂直大模型基础设施、Grader智能批改助手、Daily-AI-Scholar及评课社区。我们为大模型注入“名师灵魂”，连接学习、教学与评价的全链路。",
+    "keywords": "教育科技, 教材帮, Mentis, K12知识库, 大模型微调数据, 智慧校园, AI教育, 作业批改, 评课社区, Daily-AI-Scholar"
   },
   "Header": {
     "products": "产品矩阵",
@@ -41,14 +41,14 @@
       "link": "查看开源项目"
     },
     "textbook_help": {
-      "tag": "核心产品",
-      "status": "🚧 建设中",
-      "title": "教材帮",
-      "description": "教材大模型知识库。我们不制造大模型，我们让大模型更懂教材。为 AI 提供结构化的知识点与习题数据，辅助学生深度理解核心概念。",
-      "feature1": "结构化知识点与习题数据",
-      "feature2": "辅助深度理解核心概念",
-      "feature3": "覆盖 K12 全学科教材",
-      "footer": "项目正在紧锣密鼓地建设中，敬请期待..."
+      "tag": "垂直大模型基础设施",
+      "status": "🚧 核心研发中",
+      "title": "教材帮 (Mentis)",
+      "description": "基于顶尖名校教研体系的 K12 垂直大模型基础设施。我们不制造通用大模型，我们为大模型注入“名师灵魂”。做 AI 时代的教育数据“卖水人”。",
+      "feature1": "从 OCR 到知识图谱的深度拆解",
+      "feature2": "提供高质量 SFT 监督微调数据集",
+      "feature3": "RAG 检索增强生成，确保 100% 准确",
+      "footer": "项目正在紧锣密鼓地建设中，致力于解决大模型教育场景下的幻觉与逻辑匮乏问题。"
     }
   },
   "OpenSource": {
@@ -116,6 +116,30 @@
       "description": "我们是一个充满激情的团队，汇聚了来自计算机、教育学、设计等领域的专家。如果你也对教育科技充满热忱，欢迎与我们取得联系。",
       "contact_badge": "商务合作 / 建议反馈",
       "opensource_badge": "开源贡献"
+    }
+  },
+  "Product": {
+    "visit_site": "访问官网",
+    "view_source": "查看源码",
+    "back_to_home": "返回首页",
+    "grader": {
+      "title": "Grader 智能批改助手",
+      "description": "释放教学效能，AI 驱动的全场景作业批改解决方案。"
+    },
+    "course_prism": {
+      "title": "评课社区 Course-Prism",
+      "description": "透明的课程评价社区，连接教与学的反馈闭环。"
+    },
+    "daily_ai_scholar": {
+      "title": "Daily-AI-Scholar 自动化学习助手",
+      "description": "每天为您推送精选的 AI 前沿知识，让学习更简单。"
+    },
+    "textbook_help": {
+      "title": "教材帮 (Mentis)",
+      "description": "基于名校教研体系的 K12 知识图谱，为大模型提供确定性的教育真理数据库。",
+      "vision": "为大模型注入“名师灵魂”",
+      "problem": "通用大模型的痛点：幻觉严重、逻辑匮乏、数据污染。",
+      "solution": "解决方案：从 OCR 到知识图谱的深度转换，提供 SFT 与 RAG 双重赋能模式。"
     }
   }
 }

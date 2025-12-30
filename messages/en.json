@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "Shanghai Kaixuebang Information Consulting Co., Ltd. | EdTech · Knowledge Engineering",
-    "description": "Kaixuebang is committed to building full-scenario intelligent infrastructure for education. We connect the entire chain of learning, teaching, and evaluation through AI-driven grading, transparent campus academic communities, automated knowledge assistants, and structured knowledge engineering.",
-    "keywords": "EdTech, K12 Knowledge Base, LLM Fine-tuning Data, Smart Campus, AI Education, Textbook-Help, Grader, Course-Prism, Daily-AI-Scholar"
+    "title": "Kaixuebang - EdTech & Knowledge Engineering | Mentis & Grader",
+    "description": "Kaixuebang is committed to building full-scenario intelligent infrastructure for education. Our products include: Mentis (K12 LLM Infrastructure), Grader, Daily-AI-Scholar, and Course-Prism. We inject 'master souls' into LLMs and connect the entire chain of learning.",
+    "keywords": "EdTech, Mentis, K12 Knowledge Base, LLM Fine-tuning Data, Smart Campus, AI Education, Textbook-Help, Grader, Course-Prism, Daily-AI-Scholar"
   },
   "Header": {
     "products": "Products",
@@ -41,14 +41,14 @@
       "link": "View Source"
     },
     "textbook_help": {
-      "tag": "Core Product",
-      "status": "🚧 Under Construction",
-      "title": "Textbook-Help",
-      "description": "A knowledge base for textbook-based large models. We don't create LLMs; we make LLMs understand textbooks better. We provide structured knowledge points and exercise data for AI to help students deeply understand core concepts.",
-      "feature1": "Structured knowledge points & exercises",
-      "feature2": "Aid deep understanding of concepts",
-      "feature3": "Covering all K12 subject textbooks",
-      "footer": "The project is under intensive construction, please stay tuned..."
+      "tag": "LLM Infrastructure",
+      "status": "🚧 In R&D",
+      "title": "Mentis",
+      "description": "K12 vertical LLM infrastructure based on top school research. We don't make general LLMs; we inject 'master souls' into them. The 'water seller' of educational data in the AI era.",
+      "feature1": "From OCR to Knowledge Graph",
+      "feature2": "High-quality SFT Datasets",
+      "feature3": "RAG-ready 100% Accuracy",
+      "footer": "Mentis solves hallucinations and lack of reasoning in educational AI through structured logic."
     }
   },
   "OpenSource": {
@@ -116,6 +116,30 @@
       "description": "We are a passionate team of experts from computer science, education, design, and more. If you are passionate about EdTech, welcome to contact us.",
       "contact_badge": "Business / Feedback",
       "opensource_badge": "Open Source"
+    }
+  },
+  "Product": {
+    "visit_site": "Visit Website",
+    "view_source": "View Source",
+    "back_to_home": "Back to Home",
+    "grader": {
+      "title": "Grader - AI Grading Assistant",
+      "description": "Releasing teaching potential with AI-driven grading solutions."
+    },
+    "course_prism": {
+      "title": "Course-Prism",
+      "description": "A transparent course evaluation community connecting feedback loops."
+    },
+    "daily_ai_scholar": {
+      "title": "Daily-AI-Scholar",
+      "description": "Daily email pushes of selected AI knowledge to simplify learning."
+    },
+    "textbook_help": {
+      "title": "Mentis",
+      "description": "K12 Knowledge Graph based on elite pedagogy, providing deterministic truth for LLMs.",
+      "vision": "Injecting 'Master Souls' into LLMs",
+      "problem": "General LLM Flaws: Hallucination, Lack of Reasoning, Data Contamination.",
+      "solution": "Solution: OCR-to-Graph conversion, empowering training (SFT) and inference (RAG)."
     }
   }
 }

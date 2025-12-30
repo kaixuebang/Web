@@ -11,10 +11,10 @@ export default function Footer() {
 
     const footerLinks = {
         products: [
-            { label: tBento('grader.title'), href: '/#products' },
-            { label: tBento('textbook_help.title'), href: '/#products' },
-            { label: tBento('course_prism.title'), href: '/#products' },
-            { label: tBento('daily_ai_scholar.title'), href: '/#products' },
+            { label: tBento('grader.title'), href: '/grader' },
+            { label: tBento('textbook_help.title'), href: '/mentis' },
+            { label: tBento('course_prism.title'), href: '/course-prism' },
+            { label: tBento('daily_ai_scholar.title'), href: '/daily-ai-scholar' },
         ],
         company: [
             { label: t('about_us'), href: '/about' },

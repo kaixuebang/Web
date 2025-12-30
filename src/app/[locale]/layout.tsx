@@ -67,8 +67,13 @@ export default async function LocaleLayout({
     "url": "https://kaixuebang.com",
     "logo": "https://kaixuebang.com/Logo.png",
     "description": locale === 'zh' 
-      ? "凯学邦致力于构建全场景教育智能化基础设施，连接学习、教学与评价的全链路。"
-      : "Kaixuebang is committed to building full-scenario intelligent infrastructure for education.",
+      ? "凯学邦 (Kaixuebang) 致力于构建全场景教育智能化基础设施，连接学习、教学与评价的全链路。旗下产品包括 Grader、Daily-AI-Scholar 等。"
+      : "Kaixuebang is committed to building full-scenario intelligent infrastructure for education, including Grader, Daily-AI-Scholar, and more.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@kaixuebang.com",
+      "contactType": "customer service"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": locale === 'zh' ? "上海" : "Shanghai",

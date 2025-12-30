@@ -45,9 +45,7 @@ export default function BentoGrid() {
 
                     {/* Grader Card - Large, Clickable */}
                     <Link
-                        href="https://grader.kaixuebang.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/grader"
                         className="bento-card reveal group cursor-pointer min-h-[320px] flex flex-col"
                         style={{ transitionDelay: '0.2s' }}
                     >
@@ -73,7 +71,7 @@ export default function BentoGrid() {
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
-                            <span>{t('grader.link')}</span>
+                            <span>查看详情</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
@@ -82,9 +80,7 @@ export default function BentoGrid() {
 
                     {/* 评课社区 Card - Large, Clickable */}
                     <Link
-                        href="https://github.com/kaixuebang/Course-Prism"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/course-prism"
                         className="bento-card reveal group cursor-pointer min-h-[320px] flex flex-col"
                         style={{ transitionDelay: '0.3s' }}
                     >
@@ -111,7 +107,7 @@ export default function BentoGrid() {
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
-                            <span>{t('course_prism.link')}</span>
+                            <span>查看详情</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
@@ -120,9 +116,7 @@ export default function BentoGrid() {
 
                     {/* Daily-AI-Scholar Card - Clickable */}
                     <Link
-                        href="https://github.com/kaixuebang/Daily-AI-Scholar"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/daily-ai-scholar"
                         className="bento-card reveal group cursor-pointer min-h-[320px] flex flex-col"
                         style={{ transitionDelay: '0.35s' }}
                     >
@@ -148,7 +142,7 @@ export default function BentoGrid() {
                         </p>
                         <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
                             style={{ color: 'var(--accent-green)' }}>
-                            <span>{t('daily_ai_scholar.link')}</span>
+                            <span>查看详情</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
@@ -156,7 +150,9 @@ export default function BentoGrid() {
                     </Link>
 
                     {/* 教材帮 - Under Construction */}
-                    <div className="bento-card reveal flex flex-col min-h-[320px]"
+                    <Link
+                        href="/mentis"
+                        className="bento-card reveal flex flex-col min-h-[320px] group cursor-pointer"
                         style={{ transitionDelay: '0.4s' }}>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="inline-block px-3 py-1 text-xs font-medium rounded-full"
@@ -242,7 +238,7 @@ export default function BentoGrid() {
                                 <span>{t('textbook_help.footer')}</span>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </section>

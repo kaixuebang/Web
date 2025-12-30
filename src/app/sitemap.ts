@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://kaixuebang.com';
   const locales = ['en', 'zh'];
-  const routes = ['', '/about'];
+  const routes = ['', '/about', '/grader', '/daily-ai-scholar', '/course-prism', '/mentis'];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
