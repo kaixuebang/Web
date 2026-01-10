@@ -66,10 +66,27 @@ export default async function GraderPage({ params }: { params: Promise<{ locale:
               {bento.description}
             </p>
 
-            <div className="flex flex-wrap gap-4 mb-20">
+            <div className="flex flex-wrap gap-4 mb-12">
               <Link href="https://grader.kaixuebang.com" target="_blank" className="btn-primary">
                 {common.visit_site}
               </Link>
+            </div>
+
+            {/* Video Demo Section */}
+            <div className="mb-16">
+              <h2 className="text-xl font-semibold mb-3" style={{ color: 'var(--text-primary)' }}>{t.video_title}</h2>
+              <p className="text-sm mb-6" style={{ color: 'var(--text-tertiary)' }}>{t.video_subtitle}</p>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl glass border border-[var(--card-border)]">
+                <video 
+                  controls 
+                  className="w-full"
+                  style={{ display: 'block' }}
+                  preload="metadata"
+                >
+                  <source src="https://storage.googleapis.com/grader-video-demo/%E6%99%BA%E8%83%BD%E4%BD%93%E4%BA%A7%E5%93%81%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.mp4" type="video/mp4" />
+                  您的浏览器不支持视频播放。
+                </video>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 border-t" style={{ borderColor: 'var(--card-border)' }}>

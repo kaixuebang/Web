@@ -129,7 +129,9 @@
       "positioning": "产品定位",
       "positioning_desc": "构建全场景教育智能化基础设施的核心组件，专注于提升作业批改与教学反馈效率。",
       "features": "技术特色",
-      "features_desc": "AI 驱动的自动化评估系统，支持多学科知识点对齐与个性化反馈生成。"
+      "features_desc": "AI 驱动的自动化评估系统，支持多学科知识点对齐与个性化反馈生成。",
+      "video_title": "产品演示",
+      "video_subtitle": "观看 Grader 智能批改助手的实际运作演示"
     },
     "course_prism": {
       "title": "评课社区 Course-Prism",
@@ -150,7 +152,15 @@
     "textbook_help": {
       "title": "教材帮 (Mentis)",
       "description": "基于名校教研体系的 K12 知识图谱，为大模型提供确定性的教育真理数据库。",
-      "vision": "为大模型注入“名师灵魂”",
+      "vision": "让知识变成结构化知识",
+      "core_mission": "让 AI 的讲解更系统、更好懂",
+      "intro": "教材帮致力于将知识转化为结构化数据，便于 AI 教育的深度应用。我们通过三层架构构建完整的教育知识生态系统。",
+      "layer_tool_title": "工具层",
+      "layer_tool_desc": "人人可以提取结构化数据的开放工具，从 OCR 到知识图谱的一站式转换",
+      "layer_platform_title": "平台层",
+      "layer_platform_desc": "知识数据的提取与共享平台，用户既可提取数据，也可将数据上传平台共享给他人",
+      "layer_service_title": "服务层",
+      "layer_service_desc": "教育应用与 API 服务，为开发者和教育机构提供即用型接口",
       "problem": "通用大模型的痛点：幻觉严重、逻辑匮乏、数据污染。",
       "solution": "解决方案：从 OCR 到知识图谱的深度转换，提供 SFT 与 RAG 双重赋能模式。",
       "problem_title": "痛点 (The Problem)",
@@ -164,4 +174,3 @@
     }
   }
 }
-

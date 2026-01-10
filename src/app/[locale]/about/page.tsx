@@ -7,8 +7,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = messages.About;
   const meta = messages.Metadata;
 
+  const companyName = locale === 'zh' ? '上海凯学邦信息咨询有限公司' : 'Shanghai Kaixuebang Information Consulting Co., Ltd.';
+
   return {
-    title: `${t.badge} | ${meta.title}`,
+    title: `${t.badge} - ${companyName} | ${meta.title}`,
     description: t.desc1 + " " + t.desc2,
     keywords: meta.keywords.split(', '),
     alternates: {
@@ -20,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       },
     },
     openGraph: {
-      title: `${t.badge} | ${meta.title}`,
+      title: `${t.badge} - ${companyName} | ${meta.title}`,
       description: t.desc1,
       url: `https://kaixuebang.com/${locale}/about`,
     },

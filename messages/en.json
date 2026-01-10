@@ -129,7 +129,9 @@
       "positioning": "Product Positioning",
       "positioning_desc": "A core component of the full-scenario educational intelligent infrastructure, focusing on improving the efficiency of assignment grading and teaching feedback.",
       "features": "Technical Features",
-      "features_desc": "AI-driven automated evaluation system, supporting multi-disciplinary knowledge alignment and personalized feedback generation."
+      "features_desc": "AI-driven automated evaluation system, supporting multi-disciplinary knowledge alignment and personalized feedback generation.",
+      "video_title": "Product Demo",
+      "video_subtitle": "Watch Grader AI Grading Assistant in action"
     },
     "course_prism": {
       "title": "Course-Prism",
@@ -150,7 +152,15 @@
     "textbook_help": {
       "title": "Mentis",
       "description": "K12 Knowledge Graph based on elite pedagogy, providing deterministic truth for LLMs.",
-      "vision": "Injecting 'Master Souls' into LLMs",
+      "vision": "Transform Knowledge into Structured Data",
+      "core_mission": "Making AI explanations more systematic and comprehensible",
+      "intro": "Mentis is dedicated to transforming knowledge into structured data for deep AI education applications. We build a complete educational knowledge ecosystem through a three-layer architecture.",
+      "layer_tool_title": "Tool Layer",
+      "layer_tool_desc": "Open tools for everyone to extract structured data, one-stop conversion from OCR to knowledge graphs",
+      "layer_platform_title": "Platform Layer",
+      "layer_platform_desc": "Knowledge data extraction and sharing platform where users can extract data and share with others",
+      "layer_service_title": "Service Layer",
+      "layer_service_desc": "Educational applications and API services, providing ready-to-use interfaces for developers and institutions",
       "problem": "General LLM Flaws: Hallucination, Lack of Reasoning, Data Contamination.",
       "solution": "Solution: OCR-to-Graph conversion, empowering training (SFT) and inference (RAG).",
       "problem_title": "The Problem",
@@ -164,4 +174,3 @@
     }
   }
 }
-

@@ -152,7 +152,7 @@ export default function BentoGrid() {
                     {/* 教材帮 - Under Construction */}
                     <Link
                         href="/mentis"
-                        className="bento-card reveal flex flex-col min-h-[320px] group cursor-pointer"
+                        className="bento-card reveal group cursor-pointer min-h-[320px] flex flex-col"
                         style={{ transitionDelay: '0.4s' }}>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="inline-block px-3 py-1 text-xs font-medium rounded-full"
@@ -170,73 +170,27 @@ export default function BentoGrid() {
                                 {t('textbook_help.status')}
                             </span>
                         </div>
-
-                        <div className="flex-1">
-                            <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
-                                style={{ backgroundColor: 'rgba(124, 58, 237, 0.1)' }}>
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-                                    <path d="M8 7h8" />
-                                    <path d="M8 11h6" />
-                                </svg>
-                            </div>
-
-                            <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-                                {t('textbook_help.title')}
-                            </h3>
-
-                            <p className="text-lg leading-relaxed mb-6 max-w-3xl" style={{ color: 'var(--text-secondary)' }}>
-                                {t('textbook_help.description')}
-                            </p>
-
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                <div className="flex items-start gap-3">
-                                    <div className="w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                                        style={{ backgroundColor: 'rgba(124, 58, 237, 0.1)' }}>
-                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent-purple)">
-                                            <path d="M20 6L9 17l-5-5" stroke="var(--accent-purple)" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <span style={{ color: 'var(--text-secondary)' }}>
-                                        {t('textbook_help.feature1')}
-                                    </span>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                                        style={{ backgroundColor: 'rgba(124, 58, 237, 0.1)' }}>
-                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent-purple)">
-                                            <path d="M20 6L9 17l-5-5" stroke="var(--accent-purple)" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <span style={{ color: 'var(--text-secondary)' }}>
-                                        {t('textbook_help.feature2')}
-                                    </span>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                                        style={{ backgroundColor: 'rgba(124, 58, 237, 0.1)' }}>
-                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent-purple)">
-                                            <path d="M20 6L9 17l-5-5" stroke="var(--accent-purple)" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <span style={{ color: 'var(--text-secondary)' }}>
-                                        {t('textbook_help.feature3')}
-                                    </span>
-                                </div>
-                            </div>
+                        <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                            style={{ backgroundColor: 'rgba(124, 58, 237, 0.1)' }}>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                                <path d="M8 7h8" />
+                                <path d="M8 11h6" />
+                            </svg>
                         </div>
-
-                        {/* Construction Notice */}
-                        <div className="mt-8 pt-6 border-t"
-                            style={{ borderColor: 'var(--card-border)' }}>
-                            <div className="flex items-center gap-2 text-sm" style={{ color: 'var(--text-tertiary)' }}>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <path d="M12 6v6l4 2" />
-                                </svg>
-                                <span>{t('textbook_help.footer')}</span>
-                            </div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+                            {t('textbook_help.title')}
+                        </h3>
+                        <p className="text-base leading-relaxed flex-1" style={{ color: 'var(--text-secondary)' }}>
+                            {t('textbook_help.description')}
+                        </p>
+                        <div className="mt-6 flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all"
+                            style={{ color: 'var(--accent-purple)' }}>
+                            <span>{t('view_details')}</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
                         </div>
                     </Link>
                 </div>
