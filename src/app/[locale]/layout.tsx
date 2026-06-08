@@ -1,9 +1,13 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import Script from "next/script";
+
+// Pre-render a static page for each supported locale (required for `output: 'export'`)
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'zh' }];
+}
 
 const inter = Inter({
   variable: "--font-inter",
@@ -65,7 +69,7 @@ export default async function LocaleLayout({
     "@type": "Organization",
     "name": "凯学邦 Kaixuebang",
     "url": "https://kaixuebang.com",
-    "logo": "https://kaixuebang.com/Logo.png",
+    "logo": "https://kaixuebang.com/logo.png",
     "description": locale === 'zh' 
       ? "凯学邦 (Kaixuebang) 致力于构建全场景教育智能化基础设施，连接学习、教学与评价的全链路。旗下产品包括 Grader、Daily-AI-Scholar 等。"
       : "Kaixuebang is committed to building full-scenario intelligent infrastructure for education, including Grader, Daily-AI-Scholar, and more.",

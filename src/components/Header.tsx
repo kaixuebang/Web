@@ -51,7 +51,7 @@ export default function Header() {
           className="flex items-center transition-all hover:opacity-80 relative z-10"
         >
           <Image
-            src="/Logo.png"
+            src="/logo.png"
             alt={locale === 'zh' ? "凯学邦 Kaixuebang - 教育科技与知识工程" : "Kaixuebang - EdTech & Knowledge Engineering"}
             width={140}
             height={60}

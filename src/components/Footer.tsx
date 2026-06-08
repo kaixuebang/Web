@@ -44,7 +44,7 @@ export default function Footer() {
                             className="transition-opacity hover:opacity-80 mb-4 inline-block"
                         >
                             <Image
-                                src="/Logo.png"
+                                src="/logo.png"
                                 alt={isZh ? "凯学邦 Kaixuebang - 重塑知识的传递" : "Kaixuebang - Reshaping Knowledge Transfer"}
                                 width={140}
                                 height={60}

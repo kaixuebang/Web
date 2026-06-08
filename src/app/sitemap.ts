@@ -1,5 +1,8 @@
 import { MetadataRoute } from 'next';
 
+// Evaluate at build time so it can be emitted as a static file under `output: 'export'`
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://kaixuebang.com';
   const locales = ['en', 'zh'];
